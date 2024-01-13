@@ -68,19 +68,4 @@ if biterSpawner then
             }
         }
     }
-	--could be cool, but... nah. Not yet.
-    --if l_r > 0 then
-    --    unitSet[#unitSet + 1] = {
-    --        "leviathan-armoured-flyer",
-    --        {
-    --            {
-    --                0.965,
-    --                0.0
-    --            },
-    --            {
-    --                1.0,
-    --                0.06 * l_r
-    --            }
-    --        }
-    --    }
     end

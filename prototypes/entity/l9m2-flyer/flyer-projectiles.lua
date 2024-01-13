@@ -828,14 +828,14 @@ data:extend(
     {
       {
         name = "soft-fire-smoke",
-        frequency = 0.05, --0.25,
+        frequency = 0.06, --0.25,
         position = {0.0, 0}, -- -0.8},
         starting_frame_deviation = 60
       }
     },
     particle_buffer_size = 90,
-    particle_spawn_interval = 2,
-    particle_spawn_timeout = 8,
+    particle_spawn_interval = 3,
+    particle_spawn_timeout = 7,
     particle_vertical_acceleration = 0.005 * 0.60,
     particle_horizontal_speed = 0.2* 0.75 * 1.5,
     particle_horizontal_speed_deviation = 0.005 * 0.70,

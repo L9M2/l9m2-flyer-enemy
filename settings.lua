@@ -5,7 +5,7 @@ data:extend(
             name = "l9m2-flyer-small-flyer-spawn-probability",
             setting_type = "startup",
             default_value = "75%",
-            allowed_values = {"25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
+            allowed_values = {"0%", "25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
             order = "a1"
         },
 		{
@@ -13,7 +13,7 @@ data:extend(
             name = "l9m2-flyer-medium-flyer-spawn-probability",
             setting_type = "startup",
             default_value = "75%",
-            allowed_values = {"25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
+            allowed_values = {"0%", "25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
             order = "a2"
         },
 		{
@@ -21,7 +21,7 @@ data:extend(
             name = "l9m2-flyer-big-flyer-spawn-probability",
             setting_type = "startup",
             default_value = "75%",
-            allowed_values = {"25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
+            allowed_values = {"0%", "25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
             order = "a3"
         },
 		{
@@ -29,7 +29,7 @@ data:extend(
             name = "l9m2-flyer-behemoth-flyer-spawn-probability",
             setting_type = "startup",
             default_value = "75%",
-            allowed_values = {"25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
+            allowed_values = {"0%", "25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
             order = "a4"
         },
 		--Default True = Fire
