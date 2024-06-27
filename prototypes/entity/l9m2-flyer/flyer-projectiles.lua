@@ -85,7 +85,7 @@ function flyer_attack_parameters(data)
 			}
 			},
 			--sound = sounds.flyer_roars(data.roarvolume),
-			animation = l9m2_flyerattackanimation(data.scale, data.tint1, data.tint2)
+			animation = l9m2_smallflyerattackanimation(data.scale)
 		}
 	else
 		return
@@ -160,7 +160,7 @@ function flyer_attack_parameters(data)
 			}
 			},
 			--sound = sounds.flyer_roars(data.roarvolume),
-			animation = l9m2_flyerattackanimation(data.scale, data.tint1, data.tint2)
+			animation = l9m2_smallflyerattackanimation(data.scale)
 		}
 	end
 end
@@ -235,7 +235,7 @@ function flyer_mid_attack_parameters(data)
 			}
 			},
 			--sound = sounds.flyer_roars(data.roarvolume),
-			animation = l9m2_flyerattackanimation(data.scale, data.tint1, data.tint2)
+			animation = l9m2_mediumflyerattackanimation(data.scale)
 		}
 	else
 		return
@@ -310,7 +310,7 @@ function flyer_mid_attack_parameters(data)
 			}
 			},
 			--sound = sounds.flyer_roars(data.roarvolume),
-			animation = l9m2_flyerattackanimation(data.scale, data.tint1, data.tint2)
+			animation = l9m2_mediumflyerattackanimation(data.scale)
 		}
 	end
 end
@@ -385,7 +385,7 @@ function flyer_big_attack_parameters(data)
 			}
 			},
 			--sound = sounds.flyer_roars(data.roarvolume),
-			animation = l9m2_flyerattackanimation(data.scale, data.tint1, data.tint2)
+			animation = l9m2_bigflyerattackanimation(data.scale)
 		}
 	else
 		return
@@ -460,7 +460,7 @@ function flyer_big_attack_parameters(data)
 			}
 			},
 			--sound = sounds.flyer_roars(data.roarvolume),
-			animation = l9m2_flyerattackanimation(data.scale, data.tint1, data.tint2)
+			animation = l9m2_bigflyerattackanimation(data.scale)
 		}
 	end
 end
@@ -535,7 +535,7 @@ function flyer_behemoth_attack_parameters(data)
 			}
 			},
 			--sound = sounds.flyer_roars(data.roarvolume),
-			animation = l9m2_flyerattackanimation(data.scale, data.tint1, data.tint2)
+			animation = l9m2_behemothflyerattackanimation(data.scale)
 		}
 	else
 		return
@@ -610,7 +610,7 @@ function flyer_behemoth_attack_parameters(data)
 			}
 			},
 			--sound = sounds.flyer_roars(data.roarvolume),
-			animation = l9m2_flyerattackanimation(data.scale, data.tint1, data.tint2)
+			animation = l9m2_behemothflyerattackanimation(data.scale)
 		}
 	end
 end

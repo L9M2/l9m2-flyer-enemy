@@ -142,6 +142,588 @@ function l9m2_flyerattackanimation(scale, tint1, tint2)
     }
   }
 end
+--SmallFlyer
+function l9m2_smallflyerrunanimation(scale)
+    return
+    {
+      layers=
+      {
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/small-flyer-run-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/small-flyer-run-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/small-flyer-run-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/small-flyer-run-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 8,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 8,
+          --Sprite width and height
+          --156
+          width = 156,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 16,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.125,
+          shift = util.mul_shift(util.by_pixel(0, -60), scale),
+          scale = scale*l9m2_flyer_scale
+        },
+        {
+          filenames =
+          {
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-01.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-02.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-03.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 8,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 8,
+          --Sprite width and height
+          --156
+          width = 224,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 16,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.06125,
+          shift = util.mul_shift(util.by_pixel(120, 0), scale),
+          scale = scale*l9m2_flyer_scale,
+          draw_as_shadow = true
+        }
+      }
+    }
+  end
+  function l9m2_smallflyerattackanimation(scale)
+    return
+    {
+      layers=
+      {
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/small-flyer-attack-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/small-flyer-attack-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/small-flyer-attack-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/small-flyer-attack-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 7,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 7,
+          --Sprite width and height
+          --156
+          width = 156,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 14,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.125,
+          shift = util.mul_shift(util.by_pixel(0, -60), scale),
+          scale = scale*l9m2_flyer_scale,
+        },
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 7,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 7,
+          --Sprite width and height
+          --156
+          width = 224,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 14,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.06125,
+          shift = util.mul_shift(util.by_pixel(120, 0), scale),
+          scale = scale*l9m2_flyer_scale,
+          draw_as_shadow = true
+        }
+      }
+    }
+  end
+--MediumFlyer
+
+function l9m2_mediumflyerrunanimation(scale)
+    return
+    {
+      layers=
+      {
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/medium-flyer-run-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/medium-flyer-run-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/medium-flyer-run-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/medium-flyer-run-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 8,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 8,
+          --Sprite width and height
+          --156
+          width = 156,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 16,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.125,
+          shift = util.mul_shift(util.by_pixel(0, -60), scale),
+          scale = scale*l9m2_flyer_scale
+        },
+        {
+          filenames =
+          {
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-01.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-02.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-03.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 8,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 8,
+          --Sprite width and height
+          --156
+          width = 224,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 16,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.06125,
+          shift = util.mul_shift(util.by_pixel(120, 0), scale),
+          scale = scale*l9m2_flyer_scale,
+          draw_as_shadow = true
+        }
+      }
+    }
+  end
+  function l9m2_mediumflyerattackanimation(scale)
+    return
+    {
+      layers=
+      {
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/medium-flyer-attack-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/medium-flyer-attack-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/medium-flyer-attack-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/medium-flyer-attack-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 7,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 7,
+          --Sprite width and height
+          --156
+          width = 156,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 14,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.125,
+          shift = util.mul_shift(util.by_pixel(0, -60), scale),
+          scale = scale*l9m2_flyer_scale,
+        },
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 7,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 7,
+          --Sprite width and height
+          --156
+          width = 224,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 14,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.06125,
+          shift = util.mul_shift(util.by_pixel(120, 0), scale),
+          scale = scale*l9m2_flyer_scale,
+          draw_as_shadow = true
+        }
+      }
+    }
+  end
+
+--Big Flyer
+
+
+function l9m2_bigflyerrunanimation(scale)
+    return
+    {
+      layers=
+      {
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/big-flyer-run-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/big-flyer-run-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/big-flyer-run-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/big-flyer-run-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 8,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 8,
+          --Sprite width and height
+          --156
+          width = 156,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 16,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.125,
+          shift = util.mul_shift(util.by_pixel(0, -60), scale),
+          scale = scale*l9m2_flyer_scale
+        },
+        {
+          filenames =
+          {
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-01.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-02.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-03.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 8,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 8,
+          --Sprite width and height
+          --156
+          width = 224,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 16,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.06125,
+          shift = util.mul_shift(util.by_pixel(120, 0), scale),
+          scale = scale*l9m2_flyer_scale,
+          draw_as_shadow = true
+        }
+      }
+    }
+  end
+  function l9m2_bigflyerattackanimation(scale)
+    return
+    {
+      layers=
+      {
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/big-flyer-attack-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/big-flyer-attack-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/big-flyer-attack-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/big-flyer-attack-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 7,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 7,
+          --Sprite width and height
+          --156
+          width = 156,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 14,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.125,
+          shift = util.mul_shift(util.by_pixel(0, -60), scale),
+          scale = scale*l9m2_flyer_scale,
+        },
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 7,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 7,
+          --Sprite width and height
+          --156
+          width = 224,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 14,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.06125,
+          shift = util.mul_shift(util.by_pixel(120, 0), scale),
+          scale = scale*l9m2_flyer_scale,
+          draw_as_shadow = true
+        }
+      }
+    }
+  end
+
+
+
+--Behemoth Flyer
+
+function l9m2_behemothflyerrunanimation(scale)
+    return
+    {
+      layers=
+      {
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/behemoth-flyer-run-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/behemoth-flyer-run-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/behemoth-flyer-run-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/behemoth-flyer-run-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 8,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 8,
+          --Sprite width and height
+          --156
+          width = 156,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 16,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.125,
+          shift = util.mul_shift(util.by_pixel(0, -60), scale),
+          scale = scale*l9m2_flyer_scale
+        },
+        {
+          filenames =
+          {
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-01.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-02.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-03.png",
+              "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-run-shadow-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 8,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 8,
+          --Sprite width and height
+          --156
+          width = 224,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 16,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.06125,
+          shift = util.mul_shift(util.by_pixel(120, 0), scale),
+          scale = scale*l9m2_flyer_scale,
+          draw_as_shadow = true
+        }
+      }
+    }
+  end
+  function l9m2_behemothflyerattackanimation(scale)
+    return
+    {
+      layers=
+      {
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/behemoth-flyer-attack-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/behemoth-flyer-attack-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/behemoth-flyer-attack-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/behemoth-flyer-attack-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 7,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 7,
+          --Sprite width and height
+          --156
+          width = 156,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 14,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.125,
+          shift = util.mul_shift(util.by_pixel(0, -60), scale),
+          scale = scale*l9m2_flyer_scale,
+        },
+        {
+          filenames =
+          {
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-01.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-02.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-03.png",
+            "__l9m2-flyer-enemy__/graphics/l9m2-flyer/flyer-attack-shadow-04.png"
+          },
+          priority = "high",
+          --Where to count the 'end of a line'??
+          --Or to consider what row is the 'end of the image'??
+          slice = 7,
+          --Total rows in the sheet file
+          lines_per_file = 8,
+          --Sprites in the image on a line
+          line_length = 7,
+          --Sprite width and height
+          --156
+          width = 224,
+          --Sprite width and height
+          --132
+          height = 132,
+          --Frames in a given animation
+          frame_count = 14,
+          --Facing direction
+          direction_count = 16,
+          animation_speed = 0.06125,
+          shift = util.mul_shift(util.by_pixel(120, 0), scale),
+          scale = scale*l9m2_flyer_scale,
+          draw_as_shadow = true
+        }
+      }
+    }
+  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function spitter_water_reflection(scale)
   return

@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 06. 26. 2024
+  Graphics:
+    - Reworked the Flyer's sprite to better match the mod thumbnail.
+    - Doesn't utilize the tinting mask system, instead uses entirely unique sprites per tier.
+    - Old Black and White sprite remains in case of compatibility. 
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 12. 15. 2023
+  Major Features:
+    - Initial release. 
