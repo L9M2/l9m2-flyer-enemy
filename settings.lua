@@ -32,6 +32,14 @@ data:extend(
             allowed_values = {"0%", "25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
             order = "a4"
         },
+				{
+								type = "string-setting",
+								name = "l9m2-flyer-ultra-flyer-spawn-probability",
+								setting_type = "startup",
+								default_value = "25%",
+								allowed_values = {"0%", "25%", "50%", "75%", "100%", "125%", "150%", "200%", "300%", "400%"},
+								order = "a4"
+						},
 		--Default True = Fire
 		{
 			type = "bool-setting",
@@ -54,6 +62,12 @@ data:extend(
 		{
 			type = "bool-setting",
 			name = "l9m2-flyer-behemoth-fire-or-acid",
+			setting_type = "startup",
+			default_value = true
+		},
+		{
+			type = "bool-setting",
+			name = "l9m2-flyer-ultra-fire-or-acid",
 			setting_type = "startup",
 			default_value = true
 		}

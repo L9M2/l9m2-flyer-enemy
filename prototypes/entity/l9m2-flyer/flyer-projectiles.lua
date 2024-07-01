@@ -614,17 +614,173 @@ function flyer_behemoth_attack_parameters(data)
 		}
 	end
 end
+--Leviathan
+--TBD
+--Ultra
 
+function flyer_ultra_attack_parameters(data)
+	if settings.startup["l9m2-flyer-ultra-fire-or-acid"].value then
+	return
+	{
+		type = "stream",
+		ammo_category = "biological",
+		cooldown = data.cooldown,
+		cooldown_deviation = data.cooldown_deviation,
+		range = data.range,
+		range_mode = data.range_mode,
+		min_range = data.min_range,
+		min_attack_distance = data.min_attack_distance,
+		--projectile_creation_distance = 1.9,
+		damage_modifier = data.damage_modifier,
+		warmup = 30,
+		projectile_creation_parameters = flyer_shoot_shiftings(data.scale, data.scale * scale_flyer_stream),
+		use_shooter_direction = true,
+	
+		lead_target_for_projectile_speed = 0.2* 0.75 * 1.5 *1.5, -- this is same as particle horizontal speed of flamethrower fire stream
+	
+		ammo_type =
+		{
+		category = "biological",
+		action =
+		{
+			type = "direct",
+			action_delivery =
+			{
+			type = "stream",
+					stream = "flyer-fire-stream"
+			}
+		}
+		},
+		cyclic_sound =
+		{
+		begin_sound =
+		{
+			{
+			filename = "__base__/sound/creatures/spitter-spit-start-1.ogg",
+			volume = 0.27
+			},
+			{
+			filename = "__base__/sound/creatures/spitter-spit-start-2.ogg",
+			volume = 0.27
+			},
+			{
+			filename = "__base__/sound/creatures/spitter-spit-start-3.ogg",
+			volume = 0.27
+			},
+			{
+			filename = "__base__/sound/creatures/spitter-spit-start-4.ogg",
+			volume = 0.27
+			}
+		},
+		middle_sound =
+		{
+			{
+			filename = "__base__/sound/fight/flamethrower-mid.ogg",
+			volume = 0
+			}
+		},
+		end_sound =
+		{
+			{
+			filename = "__base__/sound/creatures/spitter-spit-end-1.ogg",
+			volume = 0
+			}
+		}
+		},
+		--sound = sounds.flyer_roars(data.roarvolume),
+		animation = l9m2_ultraflyerattackanimation(data.scale)
+	}
+else
+	return
+	{
+		type = "stream",
+		ammo_category = "biological",
+		cooldown = data.cooldown,
+		cooldown_deviation = data.cooldown_deviation,
+		range = data.range,
+		range_mode = data.range_mode,
+		min_range = data.min_range,
+		min_attack_distance = data.min_attack_distance,
+		--projectile_creation_distance = 1.9,
+		damage_modifier = data.damage_modifier,
+		warmup = 30,
+		projectile_creation_parameters = flyer_shoot_shiftings(data.scale, data.scale * scale_flyer_stream),
+		use_shooter_direction = true,
+	
+		lead_target_for_projectile_speed = 0.2* 0.75 * 1.5 *1.5, -- this is same as particle horizontal speed of flamethrower fire stream
+	
+		ammo_type =
+		{
+		category = "biological",
+		action =
+		{
+			type = "direct",
+			action_delivery =
+			{
+			type = "stream",
+			--stream = data.acid_stream_name
+				--Fire Ants? FLYER FIRE ANT
+				--settings.startup["l9m2-flyer-small-fire-or-acid"].value
+					--stream = "flamethrower-fire-stream"
+					stream = data.acid_stream_name
+			}
+		}
+		},
+		cyclic_sound =
+		{
+		begin_sound =
+		{
+			{
+			filename = "__base__/sound/creatures/spitter-spit-start-1.ogg",
+			volume = 0.27
+			},
+			{
+			filename = "__base__/sound/creatures/spitter-spit-start-2.ogg",
+			volume = 0.27
+			},
+			{
+			filename = "__base__/sound/creatures/spitter-spit-start-3.ogg",
+			volume = 0.27
+			},
+			{
+			filename = "__base__/sound/creatures/spitter-spit-start-4.ogg",
+			volume = 0.27
+			}
+		},
+		middle_sound =
+		{
+			{
+			filename = "__base__/sound/fight/flamethrower-mid.ogg",
+			volume = 0
+			}
+		},
+		end_sound =
+		{
+			{
+			filename = "__base__/sound/creatures/spitter-spit-end-1.ogg",
+			volume = 0
+			}
+		}
+		},
+		--sound = sounds.flyer_roars(data.roarvolume),
+		animation = l9m2_ultraflyerattackanimation(data.scale)
+	}
+end
+end
 
 scale_flyer_small    = 0.5
 scale_flyer_medium   = 0.7
 scale_flyer_big      = 1.0
 scale_flyer_behemoth = 1.2
+scale_flyer_leviathan = 1.4
+scale_flyer_ultra = 2.0
 
 stream_scale_flyer_small    = 0.5
 stream_scale_flyer_medium   = 0.7
 stream_scale_flyer_big      = 1.0
 stream_scale_flyer_behemoth = 1.2
+stream_scale_flyer_leviathan = 1.4
+stream_scale_flyer_ultra = 2.0
 
 tint_1_flyer_small    = {r=0.248 , g=0.122 , b=0.021 , a=1 } --hr
 tint_2_flyer_small    = {r=0.91 , g=0.92 , b=0.87 , a=1 } --non hr
@@ -644,11 +800,6 @@ stream_tint_flyer_medium   = stream_tint
 stream_tint_flyer_big      = stream_tint
 stream_tint_flyer_behemoth = stream_tint
 
-stream_tint_flyer_small    = stream_tint_flyer_small
-stream_tint_flyer_medium   = stream_tint_flyer_medium
-stream_tint_flyer_big      = stream_tint_flyer_big
-stream_tint_flyer_behemoth = stream_tint_flyer_behemoth
-
 tint_flyer_small      = {r = 0.7, g = 1, b = 0.3  , a = 0.5}--{r=1    , g=0.63 , b=0    , a=0.5  }
 tint_flyer_medium     = {r=0.9  , g=0.15 , b=0.3  , a=1    }
 tint_flyer_big        = {r=0.34 , g=0.68 , b=0.90 , a=0.8    }
@@ -658,21 +809,23 @@ splash_tint_flyer_small      = splash_tint
 splash_tint_flyer_medium     = splash_tint
 splash_tint_flyer_big        = splash_tint
 splash_tint_flyer_behemoth   = splash_tint
+splash_tint_flyer_leviathan   = splash_tint
+splash_tint_flyer_ultra   = splash_tint
 
-splash_tint_flyer_small      = splash_tint_flyer_small
-splash_tint_flyer_medium     = splash_tint_flyer_medium
-splash_tint_flyer_big        = splash_tint_flyer_big
-splash_tint_flyer_behemoth   = splash_tint_flyer_behemoth
 
 sticker_tint_small     = sticker_tint
 sticker_tint_medium    = sticker_tint
 sticker_tint_big       = sticker_tint
 sticker_tint_behemoth  = sticker_tint
+sticker_tint_leviathan  = sticker_tint
+sticker_tint_ultra  = sticker_tint
 
 scale_flyer_small     = 0.65
 scale_flyer_medium    = 0.83
 scale_flyer_big       = 1.0
 scale_flyer_behemoth  = 1.2
+scale_flyer_leviathan = 1.4
+scale_flyer_ultra = 2.0
 
 scale_flyer_stream    = 15
 scale_flyer_stream = 20
@@ -682,40 +835,33 @@ stream_scale_flyer_medium   = 0.83
 stream_scale_flyer_big      = 1.0
 stream_scale_flyer_behemoth = 1.2
 
-damage_modifier_flyer_small    = 12
-damage_modifier_flyer_medium   = 24
-damage_modifier_flyer_big      = 36
-damage_modifier_flyer_behemoth = 60
+
 
 damage_modifier_flyer_small    = 36
 damage_modifier_flyer_medium   = 48
 damage_modifier_flyer_big      = 72
 damage_modifier_flyer_behemoth = 96
+damage_modifier_flyer_leviathan = 106
+damage_modifier_flyer_ultra = 124
 
 damage_splash_flyer_small    = 0.1
 damage_splash_flyer_medium   = 0.2
 damage_splash_flyer_big      = 0.6
 damage_splash_flyer_behemoth = 1.2
 
-damage_splash_flyer_small    = 0.1
-damage_splash_flyer_medium   = 0.2
-damage_splash_flyer_big      = 0.6
-damage_splash_flyer_behemoth = 1.0
 
-stream_radius_flyer_small    = 1
-stream_radius_flyer_medium   = 1.25
-stream_radius_flyer_big      = 1.35
-stream_radius_flyer_behemoth = 1.75
 
 stream_radius_flyer_small    = 1.4
 stream_radius_flyer_medium   = 1.55
 stream_radius_flyer_big      = 1.75
 stream_radius_flyer_behemoth = 2
 
-range_flyer_small    = 25
-range_flyer_medium   = 30
-range_flyer_big      = 38
-range_flyer_behemoth = 48
+range_flyer_small    = 12
+range_flyer_medium   = 18
+range_flyer_big      = 28
+range_flyer_behemoth = 44
+range_flyer_leviathan = 50
+range_flyer_ultra = 64
 
 prepare_range_flyer_small    = 8
 prepare_range_flyer_medium   = 16

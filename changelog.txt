@@ -1,4 +1,31 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 06. 30. 2024
+  Major Features:
+    - Compatibility with Enemy Race Manager! Now the Fliers join the fray!
+      They will now spawn and evolve from the ERM spitter spawners and join in. Even fighting as respective flying AI units for the Biters.
+      They will also be more encouraged to fly over water more than their vanilla counterparts. 
+      Spawning percentages are still the same as with vanilla.
+      They will also scale up just as the rest of the ERM enemies.
+      They are still resilient to fire.
+      They will still fly.
+  Features:
+    - Added Ultra Flyer Rank - A rank above Behemoths.
+      Ultra's Are White, and spawn once the evolution factor is 97% or higher with a weight 0.01% chance (on top of their already weighted spawning, making them even rarer).
+  Combat Balancing:
+    - Changed Small Flyer Range to 12 (From 25).
+      They shouldn't out range gun turrets now.
+    - Small Flyers don't spawn until the Evolution Factor has reached 2%. (Though it's gradual up to 10% at the peak for spawning Small Flyers.)
+    - Changed Medium Flyer Range to 18 (From 30).
+      This is the max gun turret range.
+    - Changed Big Flyer Range to 28 (From 38). They will outrange laser turrets.
+    - Changed Behemoth Flyer Range to 44 (From 48). They will outrange laser turrets.
+    - Ultra Flyer Range is 64. They will outrange laser turrets.
+      Recommend mod that increases gun/laser turret range or have longer range turrets.
+    - Changed fire resistance to 95%. (From 100%) So they can still be damaged by fire, but are extremely resilient to it.
+  Graphics:
+    - Added Proper Icons to the Flyers inside the Map Editor.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 06. 26. 2024
   Graphics:

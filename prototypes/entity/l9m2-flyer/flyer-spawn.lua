@@ -6,6 +6,8 @@ if biterSpawner then
     local medium_rate = setting_utils.getPositivePercentageOf("l9m2-flyer-medium-flyer-spawn-probability")
     local big_rate = setting_utils.getPositivePercentageOf("l9m2-flyer-big-flyer-spawn-probability")
     local behemoth_rate = setting_utils.getPositivePercentageOf("l9m2-flyer-behemoth-flyer-spawn-probability")
+    --local leviathan_rate = setting_utils.getPositivePercentageOf("l9m2-flyer-leviathan-flyer-spawn-probability")
+    local ultra_rate = setting_utils.getPositivePercentageOf("l9m2-flyer-ultra-flyer-spawn-probability")
     local unitSet = biterSpawner["result_units"]
     unitSet[#unitSet + 1] = {
         "small-flyer",
@@ -15,6 +17,11 @@ if biterSpawner then
 			0.0, --Evolution Factor
 			0.0 --Spawn chance
 			},
+            {
+			
+                0.02, --Evolution Factor
+                0.0 --Spawn chance
+                },
 			{
 				0.1,
 				0.3 * small_rate
@@ -65,6 +72,19 @@ if biterSpawner then
             {
                 1.0,
                 0.3 * behemoth_rate
+            }
+        }
+    }
+    unitSet[#unitSet + 1] = {
+        "ultra-flyer",
+        {
+            {
+                0.97,
+                0.0
+            },
+            {
+                1.0,
+                0.01 * ultra_rate
             }
         }
     }
