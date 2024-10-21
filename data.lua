@@ -68,7 +68,7 @@ data:extend(
 	},
     healing_per_tick = 0.01,
     collision_box = {{-0.3, -0.3}, {0.3, 0.3}},
-	collision_mask = {}, 
+	collision_mask = {layers = {}}, 
     selection_box = {{-0.7, -2.5}, {0.7, -0.5}},
     damaged_trigger_effect = hit_effects.biter(),
     sticker_box = {{-0.3, -2.5}, {0.3, -1.2}},
@@ -98,7 +98,7 @@ data:extend(
 
     distance_per_frame = 0.055,
     -- in pu
-    pollution_to_join_attack = 4,
+    absorptions_to_join_attack  = { pollution = 4 },
 	--Actually, they just pop into a splatter of blood. Might be better.
     --corpse = "small-flyer-corpse",
     dying_explosion = "small-spitter-die",
@@ -130,7 +130,7 @@ data:extend(
     healing_per_tick = 0.01,
     collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
     selection_box = {{-0.7, -3}, {0.7, -0.5}},
-	collision_mask = {}, 
+    collision_mask = {layers = {}}, 
     damaged_trigger_effect = hit_effects.biter(),
     sticker_box = {{-0.3, -2.6}, {0.3, -1.1}},
     distraction_cooldown = 300,
@@ -159,7 +159,7 @@ data:extend(
 
     distance_per_frame = 0.066,
     -- in pu
-    pollution_to_join_attack = 12,
+    absorptions_to_join_attack  = { pollution = 12 },
 	--Actually, they just pop into a splatter of blood. Might be better.
     --corpse = "medium-flyer-corpse",
     dying_explosion = "medium-spitter-die",
@@ -189,7 +189,7 @@ data:extend(
       }
 	},
     healing_per_tick = 0.01,
-	collision_mask = {}, 
+    collision_mask = {layers = {}}, 
     collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
     selection_box = {{-0.7, -4.0}, {0.7, -0.5}},
     damaged_trigger_effect = hit_effects.biter(),
@@ -220,7 +220,7 @@ data:extend(
 
     distance_per_frame = 0.08,
     -- in pu
-    pollution_to_join_attack = 30,
+    absorptions_to_join_attack  = { pollution = 30 },
 	--Actually, they just pop into a splatter of blood. Might be better.
     --corpse = "big-flyer-corpse",
     dying_explosion = "big-spitter-die",
@@ -250,7 +250,7 @@ data:extend(
       }
 	},
     healing_per_tick = 0.01,
-	collision_mask = {}, 
+    collision_mask = {layers = {}}, 
     collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
     selection_box = {{-0.7, -4.5}, {0.7, -0.5}},
     damaged_trigger_effect = hit_effects.biter(),
@@ -281,7 +281,7 @@ data:extend(
 
     distance_per_frame = 0.084,
     -- in pu
-    pollution_to_join_attack = 200,
+    absorptions_to_join_attack  = { pollution = 200 },
 	--Actually, they just pop into a splatter of blood. Might be better.
     --corpse = "behemoth-flyer-corpse",
     dying_explosion = "behemoth-spitter-die",
@@ -311,7 +311,7 @@ data:extend(
       }
 	},
     healing_per_tick = 0.01,
-	collision_mask = {}, 
+    collision_mask = {layers = {}}, 
     collision_box = {{-2, -2}, {2, 2}},
     selection_box = {{-1.7, -4.5}, {1.7, 1.5}},
     damaged_trigger_effect = hit_effects.biter(),
@@ -342,7 +342,7 @@ data:extend(
 
     distance_per_frame = 0.0484,
     -- in pu
-    pollution_to_join_attack = 600,
+    absorptions_to_join_attack  = { pollution = 600 },
 	--Actually, they just pop into a splatter of blood. Might be better.
     --corpse = "behemoth-flyer-corpse",
     dying_explosion = "behemoth-spitter-die",

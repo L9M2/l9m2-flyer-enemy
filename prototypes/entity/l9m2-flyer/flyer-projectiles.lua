@@ -99,7 +99,7 @@ function flyer_attack_parameters(data)
 			min_range = data.min_range,
 			min_attack_distance = data.min_attack_distance,
 			--projectile_creation_distance = 1.9,
-			damage_modifier = data.damage_modifier,
+			damage_modifier = data.damage_modifier*20,
 			warmup = 30,
 			projectile_creation_parameters = flyer_shoot_shiftings(data.scale, data.scale * scale_flyer_stream),
 			use_shooter_direction = true,
@@ -249,7 +249,7 @@ function flyer_mid_attack_parameters(data)
 			min_range = data.min_range,
 			min_attack_distance = data.min_attack_distance,
 			--projectile_creation_distance = 1.9,
-			damage_modifier = data.damage_modifier,
+			damage_modifier = data.damage_modifier*20,
 			warmup = 30,
 			projectile_creation_parameters = flyer_shoot_shiftings(data.scale, data.scale * scale_flyer_stream),
 			use_shooter_direction = true,
@@ -399,7 +399,7 @@ function flyer_big_attack_parameters(data)
 			min_range = data.min_range,
 			min_attack_distance = data.min_attack_distance,
 			--projectile_creation_distance = 1.9,
-			damage_modifier = data.damage_modifier,
+			damage_modifier = data.damage_modifier*20,
 			warmup = 30,
 			projectile_creation_parameters = flyer_shoot_shiftings(data.scale, data.scale * scale_flyer_stream),
 			use_shooter_direction = true,
@@ -549,7 +549,7 @@ function flyer_behemoth_attack_parameters(data)
 			min_range = data.min_range,
 			min_attack_distance = data.min_attack_distance,
 			--projectile_creation_distance = 1.9,
-			damage_modifier = data.damage_modifier,
+			damage_modifier = data.damage_modifier*20,
 			warmup = 30,
 			projectile_creation_parameters = flyer_shoot_shiftings(data.scale, data.scale * scale_flyer_stream),
 			use_shooter_direction = true,
@@ -702,7 +702,7 @@ else
 		min_range = data.min_range,
 		min_attack_distance = data.min_attack_distance,
 		--projectile_creation_distance = 1.9,
-		damage_modifier = data.damage_modifier,
+		damage_modifier = data.damage_modifier*20,
 		warmup = 30,
 		projectile_creation_parameters = flyer_shoot_shiftings(data.scale, data.scale * scale_flyer_stream),
 		use_shooter_direction = true,
@@ -837,12 +837,12 @@ stream_scale_flyer_behemoth = 1.2
 
 
 
-damage_modifier_flyer_small    = 36
-damage_modifier_flyer_medium   = 48
-damage_modifier_flyer_big      = 72
-damage_modifier_flyer_behemoth = 96
-damage_modifier_flyer_leviathan = 106
-damage_modifier_flyer_ultra = 124
+damage_modifier_flyer_small    = 0.66
+damage_modifier_flyer_medium   = 0.96
+damage_modifier_flyer_big      = 1.72
+damage_modifier_flyer_behemoth = 2.96
+damage_modifier_flyer_leviathan = 3.06
+damage_modifier_flyer_ultra = 4.24
 
 damage_splash_flyer_small    = 0.1
 damage_splash_flyer_medium   = 0.2
